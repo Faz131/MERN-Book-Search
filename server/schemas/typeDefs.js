@@ -19,7 +19,7 @@ type User {
 }
 type Auth{
     token: ID!
-user: User
+    user: User
 }
 
 input BookInput {
@@ -41,7 +41,6 @@ type Mutation{
     saveBook(input: BookInput): User
     removeBook(input: String!): User
 }
-   }
 `;
 
 module.exports = typeDefs;
