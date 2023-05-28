@@ -21,7 +21,7 @@ const resolvers = {
             if (!user) {
                 throw new AuthenticationError('Wrong Credentials');
             }
-            const correctPass = await user.isCorrectPass(password);
+            const correctPass = await user.isCoorectPass(password);
             if (!correctPass) {
                 throw new AuthenticationError('Wrong Credentials');
             }
@@ -47,8 +47,8 @@ const resolvers = {
             }
             throw new AuthenticationError('You must be logged in')
 
-        }
-    }
-}
+        },
+    },
+};
 
 module.exports = resolvers;
