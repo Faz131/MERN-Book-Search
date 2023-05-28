@@ -17,11 +17,6 @@ type User {
     image: String
     link: String
 }
-type Auth{
-    token: ID!
-    user: User
-}
-
 input BookInput {
     bookId: String!
     authors: [String]
@@ -30,6 +25,11 @@ input BookInput {
     image: String
     link: String
 }
+type Auth{
+    token: ID!
+    user: User
+}
+
 
 type Query{
     me: User
