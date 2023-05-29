@@ -21,7 +21,7 @@ const resolvers = {
             if (!user) {
                 throw new AuthenticationError('Wrong Credentials');
             }
-            const correctPass = await user.isCoorectPass(password);
+            const correctPass = await user.isCorrectPass(password);
             if (!correctPass) {
                 throw new AuthenticationError('Wrong Credentials');
             }
