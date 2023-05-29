@@ -37,16 +37,7 @@ const LoginForm = () => {
     } catch (err) {
     }
 
-    // if (!response.ok) {
-    //   throw new Error('something went wrong!');
-    // }
 
-    //   const { token, user } = await response.json();
-    //   console.log(user);
-    // } catch (err) {
-    //   console.error(err);
-    //   setShowAlert(true);
-    // }
 
     setUserFormData({
       username: '',

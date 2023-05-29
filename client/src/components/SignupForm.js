@@ -57,10 +57,6 @@ const SignupForm = () => {
     });
   };
 
-  //   const { token, user } = await response.json();
-  //   console.log(user);
-
-
 
   return (
     <>
